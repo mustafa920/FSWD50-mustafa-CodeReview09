@@ -1,0 +1,18 @@
+SELECT customer_name, address_name
+FROM `customer`
+INNER JOIN `address` on fk_address = address_id;
+
+SELECT customer_name, address2_name
+FROM `customer`
+INNER JOIN `address` on fk_address = address_id;
+
+SELECT agency_name, address_name
+FROM `customer`
+RIGHT JOIN `address` on fk_address = address_id;
+
+SELECT client_name, address2_name
+FROM `customer`
+left JOIN `address` on fk_address = address_id;
+
+
+
